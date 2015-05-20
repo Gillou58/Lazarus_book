@@ -1,0 +1,83 @@
+object Form1: TForm1
+  Left = 238
+  Height = 419
+  Top = 150
+  Width = 442
+  Caption = 'Test de TGVPulse'
+  ClientHeight = 419
+  ClientWidth = 442
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object GVPulse2: TGVPulse
+    Left = 184
+    Height = 105
+    Top = 48
+    Width = 105
+    OnClick = GVPulse1Click
+    DrawColor = clFuchsia
+    ShrinkShape = gvpNone
+    CountDown = 0
+  end
+  object GVPulse3: TGVPulse
+    Left = 312
+    Height = 105
+    Top = 49
+    Width = 105
+    OnClick = GVPulse1Click
+    DrawColor = clRed
+    GrowShape = gvpEllipse
+    ShrinkShape = gvpEllipse
+    CountDown = 0
+  end
+  object GVPulse4: TGVPulse
+    Left = 53
+    Height = 105
+    Top = 168
+    Width = 105
+    OnClick = GVPulse1Click
+    Step = 4
+    DrawColor = clGreen
+    GrowShape = gvpFrame
+    ShrinkShape = gvpNone
+    CountDown = 0
+  end
+  object GVPulse5: TGVPulse
+    Left = 184
+    Height = 105
+    Top = 168
+    Width = 105
+    OnClick = GVPulse1Click
+    Step = 4
+    DrawColor = clMaroon
+    GrowShape = gvpNone
+    CountDown = 0
+  end
+  object GVPulse6: TGVPulse
+    Left = 312
+    Height = 105
+    Top = 168
+    Width = 105
+    OnClick = GVPulse1Click
+    DrawColor = clPurple
+    GrowShape = gvpEllipse
+    ShrinkShape = gvpFrame
+    CountDown = 0
+  end
+  object Button1: TButton
+    Left = 342
+    Height = 25
+    Top = 336
+    Width = 75
+    Caption = 'Go !'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object GVPulse1: TGVPulse
+    Left = 53
+    Height = 105
+    Top = 48
+    Width = 105
+    OnClick = GVPulse1Click
+    CountDown = 10000
+  end
+end

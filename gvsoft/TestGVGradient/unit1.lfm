@@ -1,0 +1,57 @@
+object MainForm: TMainForm
+  Left = 238
+  Height = 472
+  Top = 150
+  Width = 705
+  Caption = 'Test de GVGradient © Gilles Vasseur 2015'
+  ClientHeight = 472
+  ClientWidth = 705
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object GVGradient1: TGVGradient
+    Left = 0
+    Height = 472
+    Top = 0
+    Width = 705
+  end
+  object ColorBox1: TColorBox
+    Left = 192
+    Height = 22
+    Top = 88
+    Width = 176
+    Selected = clBlue
+    Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbPrettyNames]
+    ItemHeight = 16
+    OnChange = ColorBox1Change
+    TabOrder = 0
+  end
+  object ColorBox2: TColorBox
+    Left = 192
+    Height = 22
+    Top = 311
+    Width = 176
+    Selected = clAqua
+    Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbPrettyNames]
+    ItemHeight = 16
+    OnChange = ColorBox2Change
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 72
+    Height = 15
+    Top = 96
+    Width = 98
+    Caption = 'Couleur de &début :'
+    FocusControl = ColorBox1
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 72
+    Height = 15
+    Top = 320
+    Width = 81
+    Caption = 'Couleur de &fin :'
+    FocusControl = ColorBox2
+    ParentColor = False
+  end
+end

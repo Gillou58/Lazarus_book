@@ -1,0 +1,16 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TForm1','FORMDATA',[
+  'TPF0'#6'TForm1'#5'Form1'#4'Left'#3#254#0#6'Height'#3#240#0#3'Top'#3#150#0#5
+  +'Width'#3'@'#1#7'Caption'#6#5'Form1'#12'ClientHeight'#3#240#0#11'ClientWidth'
+  +#3'@'#1#8'OnCreate'#7#10'FormCreate'#10'LCLVersion'#6#7'1.4.0.4'#0#11'TGVGra'
+  +'dient'#11'GVGradient1'#4'Left'#2#0#6'Height'#3#240#0#3'Top'#2#0#5'Width'#3
+  +'@'#1#0#0#8'TGVPulse'#8'GVPulse1'#4'Left'#2#16#6'Height'#2'i'#3'Top'#2' '#5
+  +'Width'#2'i'#5'Color'#7#8'clMaroon'#11'ParentColor'#8#4'Step'#2#4#11'ShrinkS'
+  +'hape'#7#10'gvpEllipse'#9'CountDown'#3#136#19#8'Interval'#2'2'#0#0#15'TGVWai'
+  +'tingPanel'#15'GVWaitingPanel1'#4'Left'#3#192#0#6'Height'#2'i'#3'Top'#2' '#5
+  +'Width'#2'i'#5'Color'#7#8'clMaroon'#11'ParentColor'#8#9'NbOfItems'#2#10#9'Co'
+  +'untDown'#3#208#7#8'Interval'#2'2'#0#0#7'TButton'#7'Button1'#4'Left'#3#224#0
+  +#6'Height'#2#25#3'Top'#3#200#0#5'Width'#2'K'#7'Caption'#6#7'Button1'#7'OnCli'
+  +'ck'#7#12'Button1Click'#8'TabOrder'#2#0#0#0#0
+]);

@@ -1,0 +1,15 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.caption
+msgid "Test de GVGradient © Gilles Vasseur 2015"
+msgstr ""
+
+#: tmainform.label1.caption
+msgid "Couleur de &début :"
+msgstr ""
+
+#: tmainform.label2.caption
+msgid "Couleur de &fin :"
+msgstr ""
+

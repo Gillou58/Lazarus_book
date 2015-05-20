@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 254
+  Height = 298
+  Top = 150
+  Width = 651
+  Caption = 'Form1'
+  ClientHeight = 298
+  ClientWidth = 651
+  LCLVersion = '1.4.0.4'
+  object pb: TPaintBox
+    Left = 156
+    Height = 105
+    Top = 32
+    Width = 105
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 98
+    Height = 23
+    Top = 175
+    Width = 50
+    OnChange = SpinEdit1Change
+    TabOrder = 0
+  end
+  object GVWaitingPanel1: TGVWaitingPanel
+    Left = 16
+    Height = 105
+    Top = 64
+    Width = 105
+    TabOrder = 1
+    Started = True
+    CountDown = 0
+    Interval = 50
+  end
+  object GVPiePulsar1: TGVPiePulsar
+    Left = 416
+    Height = 193
+    Top = 32
+    Width = 200
+    TabOrder = 2
+    Step = 4
+    PieColor = clFuchsia
+    Started = True
+    CountDown = 0
+    Interval = 50
+  end
+  object GVPulse1: TGVPulse
+    Left = 304
+    Height = 105
+    Top = 64
+    Width = 105
+    ParentShowHint = False
+    TabOrder = 3
+    Started = True
+    CountDown = 0
+    Interval = 50
+  end
+  object GVWheelPulsar1: TGVWheelPulsar
+    Left = 176
+    Height = 105
+    Top = 175
+    Width = 105
+    TabOrder = 4
+    PieColor = clFuchsia
+    Started = True
+    CountDown = 0
+    Interval = 50
+    WheelColor = clPurple
+  end
+end
