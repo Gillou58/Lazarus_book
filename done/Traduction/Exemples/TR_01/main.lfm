@@ -1,0 +1,30 @@
+object Form1: TForm1
+  Left = 254
+  Height = 292
+  Top = 150
+  Width = 395
+  Caption = 'En français 1...'
+  ClientHeight = 292
+  ClientWidth = 395
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object Button1: TButton
+    Left = 156
+    Height = 25
+    Top = 105
+    Width = 75
+    Caption = 'Oui'
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 156
+    Height = 30
+    Top = 160
+    Width = 75
+    Default = True
+    DefaultCaption = True
+    Kind = bkYes
+    ModalResult = 6
+    TabOrder = 1
+  end
+end

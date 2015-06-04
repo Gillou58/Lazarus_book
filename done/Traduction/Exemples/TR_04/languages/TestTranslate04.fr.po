@@ -1,0 +1,21 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: main.rs_notpretty
+msgid "Pas joli !"
+msgstr ""
+
+#: main.rs_pretty
+msgctxt "main.rs_pretty"
+msgid "Joli !"
+msgstr ""
+
+#: tform1.button1.caption
+msgctxt "TFORM1.BUTTON1.CAPTION"
+msgid "Joli !"
+msgstr ""
+
+#: tform1.caption
+msgid "En français 4..."
+msgstr ""
+

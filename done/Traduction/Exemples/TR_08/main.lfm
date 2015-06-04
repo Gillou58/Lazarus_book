@@ -1,0 +1,79 @@
+object MainForm: TMainForm
+  Left = 372
+  Height = 216
+  Top = 236
+  Width = 616
+  Caption = 'Test of GVTranslate'
+  ClientHeight = 216
+  ClientWidth = 616
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object btnRestart: TButton
+    Left = 525
+    Height = 25
+    Top = 184
+    Width = 75
+    Caption = 'Restart'
+    Enabled = False
+    OnClick = btnRestartClick
+    TabOrder = 0
+  end
+  object lbLanguages: TListBox
+    Left = 440
+    Height = 152
+    Top = 16
+    Width = 160
+    Items.Strings = (
+      'auto'
+      'fr'
+      'de'
+      'en'
+    )
+    ItemHeight = 15
+    OnClick = lbLanguagesClick
+    TabOrder = 1
+  end
+  object pnlData: TPanel
+    Left = 16
+    Height = 152
+    Top = 16
+    Width = 384
+    ClientHeight = 152
+    ClientWidth = 384
+    TabOrder = 2
+    object lblLanguage: TLabel
+      Left = 32
+      Height = 15
+      Top = 10
+      Width = 52
+      Caption = 'Language'
+      ParentColor = False
+    end
+    object lblDirectory: TLabel
+      Left = 32
+      Height = 15
+      Top = 48
+      Width = 48
+      Caption = 'Directory'
+      ParentColor = False
+    end
+    object lblFile: TLabel
+      Left = 32
+      Height = 15
+      Top = 80
+      Width = 18
+      Caption = 'File'
+      ParentColor = False
+    end
+    object lblAccess: TLabel
+      Left = 32
+      Height = 15
+      Top = 112
+      Width = 36
+      Caption = 'Access'
+      ParentColor = False
+    end
+  end
+end

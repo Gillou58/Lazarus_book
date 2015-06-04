@@ -1,0 +1,47 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: gvtranslate.rs_fallbacklanguage
+msgid "auto"
+msgstr ""
+
+#: main.r_access
+msgid "Access: "
+msgstr ""
+
+#: main.r_directory
+msgid "Directory: "
+msgstr ""
+
+#: main.r_file
+msgid "File: "
+msgstr ""
+
+#: main.r_language
+msgid "Language: "
+msgstr ""
+
+#: tmainform.btnrestart.caption
+msgid "Restart"
+msgstr ""
+
+#: tmainform.caption
+msgid "Test of GVTranslate"
+msgstr ""
+
+#: tmainform.lblaccess.caption
+msgid "Access"
+msgstr ""
+
+#: tmainform.lbldirectory.caption
+msgid "Directory"
+msgstr ""
+
+#: tmainform.lblfile.caption
+msgid "File"
+msgstr ""
+
+#: tmainform.lbllanguage.caption
+msgid "Language"
+msgstr ""
+

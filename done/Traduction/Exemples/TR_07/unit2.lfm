@@ -1,0 +1,23 @@
+object Form2: TForm2
+  Left = 356
+  Height = 270
+  Top = 256
+  Width = 365
+  Caption = 'New form'
+  ClientHeight = 270
+  ClientWidth = 365
+  LCLVersion = '1.4.0.4'
+  object BitBtn1: TBitBtn
+    Left = 151
+    Height = 30
+    Hint = 'Close the form'
+    Top = 184
+    Width = 75
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+end
