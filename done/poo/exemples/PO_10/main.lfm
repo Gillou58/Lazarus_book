@@ -1,0 +1,48 @@
+object MainForm: TMainForm
+  Left = 382
+  Height = 347
+  Top = 184
+  Width = 505
+  ActiveControl = edtSetVar
+  Caption = 'Test des méthodes de classe statiques'
+  ClientHeight = 347
+  ClientWidth = 505
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object mmoDisplay: TMemo
+    Left = 16
+    Height = 280
+    Top = 16
+    Width = 232
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object edtSetVar: TEdit
+    Left = 272
+    Height = 23
+    Top = 16
+    Width = 192
+    OnExit = edtSetVarExit
+    TabOrder = 1
+    Text = 'essai'
+  end
+  object btnClear: TButton
+    Left = 16
+    Height = 25
+    Top = 312
+    Width = 75
+    Caption = 'Nettoyer'
+    OnClick = btnClearClick
+    TabOrder = 2
+  end
+  object btnOK: TButton
+    Left = 389
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'OK'
+    OnClick = btnOKClick
+    TabOrder = 3
+  end
+end

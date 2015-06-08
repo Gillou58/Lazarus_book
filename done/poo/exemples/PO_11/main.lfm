@@ -1,0 +1,19 @@
+object MainForm: TMainForm
+  Left = 254
+  Height = 240
+  Top = 150
+  Width = 470
+  Caption = 'Test des constructeurs et des tructeurs de classe'
+  ClientHeight = 240
+  ClientWidth = 470
+  LCLVersion = '1.4.0.4'
+  object btnGO: TButton
+    Left = 200
+    Height = 50
+    Top = 104
+    Width = 75
+    Caption = 'GO !'
+    OnClick = btnGOClick
+    TabOrder = 0
+  end
+end
