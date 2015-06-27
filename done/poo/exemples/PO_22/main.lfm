@@ -1,0 +1,52 @@
+object MainForm: TMainForm
+  Left = 254
+  Height = 300
+  Top = 150
+  Width = 870
+  Caption = 'Test des méthodes de classe'
+  ClientHeight = 300
+  ClientWidth = 870
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object lwMemos: TListView
+    Left = 32
+    Height = 176
+    Top = 16
+    Width = 362
+    Columns = <    
+      item
+        AutoSize = True
+        Caption = 'Intitulé'
+        Width = 358
+      end    
+      item
+        AutoSize = True
+        Caption = 'Version'
+        Width = 51
+      end>
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object btnNew: TButton
+    Left = 32
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Nouveau'
+    OnClick = btnNewClick
+    TabOrder = 1
+  end
+  object pnlMain: TPanel
+    Left = 470
+    Height = 300
+    Top = 0
+    Width = 400
+    Align = alRight
+    Color = clAqua
+    ParentColor = False
+    TabOrder = 2
+  end
+end

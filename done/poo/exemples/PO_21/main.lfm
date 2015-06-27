@@ -1,0 +1,154 @@
+object MainForm: TMainForm
+  Left = 254
+  Height = 276
+  Top = 150
+  Width = 735
+  ActiveControl = lbledt1
+  Caption = 'Test des propriétés 07'
+  ClientHeight = 276
+  ClientWidth = 735
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object lbledt1: TLabeledEdit
+    Left = 37
+    Height = 23
+    Top = 32
+    Width = 163
+    EditLabel.AnchorSideLeft.Control = lbledt1
+    EditLabel.AnchorSideRight.Control = lbledt1
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = lbledt1
+    EditLabel.Left = 37
+    EditLabel.Height = 15
+    EditLabel.Top = 14
+    EditLabel.Width = 163
+    EditLabel.Caption = 'Version (TMyClass)'
+    EditLabel.ParentColor = False
+    ReadOnly = True
+    TabOrder = 0
+    Text = 'lbledt1'
+  end
+  object lbledt2: TLabeledEdit
+    Left = 37
+    Height = 23
+    Top = 96
+    Width = 163
+    EditLabel.AnchorSideLeft.Control = lbledt2
+    EditLabel.AnchorSideRight.Control = lbledt2
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = lbledt2
+    EditLabel.Left = 37
+    EditLabel.Height = 15
+    EditLabel.Top = 78
+    EditLabel.Width = 163
+    EditLabel.Caption = 'Sous-version (TMyClass)'
+    EditLabel.ParentColor = False
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'lbledt2'
+  end
+  object lbledt3: TLabeledEdit
+    Left = 272
+    Height = 23
+    Top = 32
+    Width = 163
+    EditLabel.AnchorSideLeft.Control = lbledt3
+    EditLabel.AnchorSideRight.Control = lbledt3
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = lbledt3
+    EditLabel.Left = 272
+    EditLabel.Height = 15
+    EditLabel.Top = 14
+    EditLabel.Width = 163
+    EditLabel.Caption = 'Version (TMySubClass)'
+    EditLabel.ParentColor = False
+    ReadOnly = True
+    TabOrder = 2
+    Text = 'lbledt3'
+  end
+  object lbledt4: TLabeledEdit
+    Left = 272
+    Height = 23
+    Top = 96
+    Width = 163
+    EditLabel.AnchorSideLeft.Control = lbledt4
+    EditLabel.AnchorSideRight.Control = lbledt4
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = lbledt4
+    EditLabel.Left = 272
+    EditLabel.Height = 15
+    EditLabel.Top = 78
+    EditLabel.Width = 163
+    EditLabel.Caption = 'Sous-version (TMySubClass)'
+    EditLabel.ParentColor = False
+    ReadOnly = True
+    TabOrder = 3
+    Text = 'lbledt4'
+  end
+  object lbledt5: TLabeledEdit
+    Left = 512
+    Height = 23
+    Top = 32
+    Width = 163
+    EditLabel.AnchorSideLeft.Control = lbledt5
+    EditLabel.AnchorSideRight.Control = lbledt5
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = lbledt5
+    EditLabel.Left = 512
+    EditLabel.Height = 15
+    EditLabel.Top = 14
+    EditLabel.Width = 163
+    EditLabel.Caption = 'Version (TMySubClass2)'
+    EditLabel.ParentColor = False
+    ReadOnly = True
+    TabOrder = 4
+    Text = 'lbledt5'
+  end
+  object lbledt6: TLabeledEdit
+    Left = 512
+    Height = 23
+    Top = 96
+    Width = 163
+    EditLabel.AnchorSideLeft.Control = lbledt6
+    EditLabel.AnchorSideRight.Control = lbledt6
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = lbledt6
+    EditLabel.Left = 512
+    EditLabel.Height = 15
+    EditLabel.Top = 78
+    EditLabel.Width = 163
+    EditLabel.Caption = 'Sous-version (TMySubClass2)'
+    EditLabel.ParentColor = False
+    ReadOnly = True
+    TabOrder = 5
+    Text = 'lbledt6'
+  end
+  object btnTMyClass: TButton
+    Left = 37
+    Height = 25
+    Top = 192
+    Width = 163
+    Caption = 'TMyClass (1-12)'
+    OnClick = btnTMyClassClick
+    TabOrder = 6
+  end
+  object btnTMySubClass: TButton
+    Left = 272
+    Height = 25
+    Top = 192
+    Width = 163
+    Caption = 'TMySubClass (2-22)'
+    OnClick = btnTMySubClassClick
+    TabOrder = 7
+  end
+  object btnTMySubClass2: TButton
+    Left = 512
+    Height = 25
+    Top = 192
+    Width = 163
+    Caption = 'TMySubClass2 (3-33)'
+    OnClick = btnTMySubClass2Click
+    TabOrder = 8
+  end
+end

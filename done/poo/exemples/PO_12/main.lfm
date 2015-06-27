@@ -1,0 +1,36 @@
+object MainForm: TMainForm
+  Left = 254
+  Height = 240
+  Top = 150
+  Width = 478
+  Caption = 'Test des messages'
+  ClientHeight = 240
+  ClientWidth = 478
+  LCLVersion = '1.4.0.4'
+  object edtDummy: TEdit
+    Left = 24
+    Height = 23
+    Top = 24
+    Width = 80
+    OnChange = edtDummyChange
+    TabOrder = 0
+    Text = 'A changer...'
+  end
+  object mmoDisplay: TMemo
+    Left = 232
+    Height = 200
+    Top = 24
+    Width = 232
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+  object btnLost: TButton
+    Left = 24
+    Height = 25
+    Top = 199
+    Width = 75
+    Caption = 'Perdu !'
+    OnClick = btnLostClick
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,21 @@
+object MainForm: TMainForm
+  Left = 254
+  Height = 282
+  Top = 150
+  Width = 378
+  Caption = 'Test des propriétés indexées'
+  ClientHeight = 282
+  ClientWidth = 378
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object imgMain: TImage
+    Left = 0
+    Height = 282
+    Top = 0
+    Width = 378
+    Align = alClient
+    OnResize = imgMainResize
+  end
+end
