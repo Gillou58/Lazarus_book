@@ -1,0 +1,36 @@
+object MainForm: TMainForm
+  Left = 238
+  Height = 281
+  Top = 150
+  Width = 497
+  Caption = 'Test de TGVGradient - 05/11/2015'
+  ClientHeight = 281
+  ClientWidth = 497
+  Position = poScreenCenter
+  LCLVersion = '1.4.4.0'
+  object GVGradientMain: TGVGradient
+    Left = 0
+    Height = 281
+    Top = 0
+    Width = 497
+  end
+  object pnlMyPanel: TPanel
+    Left = 160
+    Height = 50
+    Top = 88
+    Width = 170
+    Caption = 'Mon panneau'
+    ClientHeight = 50
+    ClientWidth = 170
+    TabOrder = 0
+    object GVGradientPanel: TGVGradient
+      Left = 1
+      Height = 48
+      Top = 1
+      Width = 168
+      BeginColor = clFuchsia
+      EndColor = clYellow
+      Direction = gdHorizontal
+    end
+  end
+end

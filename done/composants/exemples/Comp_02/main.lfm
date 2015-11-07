@@ -1,0 +1,37 @@
+object MainForm: TMainForm
+  Left = 238
+  Height = 333
+  Top = 150
+  Width = 541
+  Caption = 'Test de TGVURLLabel - 06/11/2015'
+  ClientHeight = 333
+  ClientWidth = 541
+  Position = poScreenCenter
+  LCLVersion = '1.4.4.0'
+  object GVUrlLabel1: TGVUrlLabel
+    Left = 169
+    Height = 45
+    Hint = 'www.developpez.com'
+    Top = 60
+    Width = 170
+    Caption = 'Cliquez ici !'
+    Font.Height = -32
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object GVUrlLabel2: TGVUrlLabel
+    Left = 169
+    Height = 25
+    Top = 192
+    Width = 183
+    Caption = 'www.developpez.com'
+    Font.Color = clBlue
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+    URLHint = False
+  end
+end

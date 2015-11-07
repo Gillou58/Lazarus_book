@@ -1,0 +1,53 @@
+object MainForm: TMainForm
+  Left = 291
+  Height = 462
+  Top = 147
+  Width = 410
+  Caption = 'Test des propriétés tableaux'
+  ClientHeight = 462
+  ClientWidth = 410
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object sgMain: TStringGrid
+    Left = 40
+    Height = 320
+    Top = 24
+    Width = 320
+    ColCount = 8
+    DefaultColWidth = 40
+    DefaultRowHeight = 40
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 8
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnDrawCell = sgMainDrawCell
+  end
+  object btnUpdate: TButton
+    Left = 40
+    Height = 25
+    Top = 360
+    Width = 75
+    Caption = 'Rafraîchir'
+    OnClick = btnUpdateClick
+    TabOrder = 1
+  end
+  object btnReset: TButton
+    Left = 128
+    Height = 25
+    Top = 360
+    Width = 75
+    Caption = 'RAZ'
+    OnClick = btnResetClick
+    TabOrder = 2
+  end
+  object lblCount: TLabel
+    Left = 224
+    Height = 1
+    Top = 368
+    Width = 1
+    ParentColor = False
+  end
+end

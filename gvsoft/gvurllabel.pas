@@ -1,23 +1,22 @@
 { |========================================================================|
   |                                                                        |
-  |                  G V S O F T                                           |
-  |                  Projet : Paquet GVORPHEUS                             |
-  |                  Description : TGVURLLabel - TLabel avec lien URL      |
-  |                  Unité : gvurlabel.pas                                 |
-  |                  Ecrit par  : VASSEUR Gilles                           |
-  |                  e-mail : g.vasseur58@laposte.net                      |
-  |                  Copyright : © G. VASSEUR 2015                         |
-  |                  Date:    18-03-2015 18:00:00                          |
-  |                  Version : 1.0.1                                       |
+  |                  Projet : Aller plus loin avec Lazarus                 |
+  |                  Description : Components - Programme exemple 01       |
+  |                  Unité : gvurllabel.pas                                |
+  |                  Site : www.developpez.net                             |
+  |                  Copyright : © Roland CHASTAIN & Gilles VASSEUR 2015   |
+  |                  Date:    04/11/2015 13:03:20                          |
+  |                  Version : 1.0.0                                       |
   |                                                                        |
   |========================================================================| }
 
-// HISTORIQUE
-// 11/03/2015 - 1.0.0 - première version opérationnelle
-// 18/03/2015 - 1.0.1 - améliorations diverses
 
-// GVTURLLABEL - part of GVORPHEUS.LPK
-// Copyright (C) 2015 Gilles VASSEUR
+// HISTORIQUE
+// 04/11/2015 13:03:20 - 1.0.0 - première version opérationnelle
+// 05/11/2015 09:38:14 - 1.0.1 - améliorations diverses
+
+// GVTURLLABEL - part of "Aller plus loin avec Lazarus"
+// Copyright © Roland CHASTAIN & Gilles VASSEUR 2015
 //
 // This program is free software: you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the
@@ -55,7 +54,7 @@ type
     fURLHint: Boolean; // lien dans l'aide ?
     procedure SetColored(AValue: Boolean);
     procedure SetEnterColor(AValue: TColor);
-    procedure SetLeaveColor(AValue: TCOlor);
+    procedure SetLeaveColor(AValue: TColor);
     procedure SetUnderlined(AValue: Boolean);
     procedure SetURLHint(AValue: Boolean); // changement de type de lien
   protected
@@ -120,13 +119,12 @@ begin
   fEnterColor := AValue; // nouvelle valeur de la couleur
 end;
 
-procedure TGVUrlLabel.SetLeaveColor(AValue: TCOlor);
+procedure TGVUrlLabel.SetLeaveColor(AValue: TColor);
 // *** couleur lorsque le curseur quitte le composant
 begin
   if fLeaveColor = AValue then // même couleur ?
     Exit; // on sort
   fLeaveColor := AValue; // nouvelle couleur
-  Font.Color := fLeaveColor; // la couleur est affectée à la fonte
 end;
 
 procedure TGVUrlLabel.SetUnderlined(AValue: Boolean);
@@ -153,10 +151,9 @@ procedure TGVUrlLabel.MouseLeave;
 begin
   inherited MouseLeave; // on hérite
   if Colored then
-  begin
-    Font.Color := LeaveColor; // couleur bleue pour la police
+    Font.Color := LeaveColor; // couleur de sortie pour la police
+  if Underlined then // soulignement ?
     Font.Style := Font.Style - [fsUnderline]; // on ne souligne plus le lien
-  end;
   Cursor := crDefault; // le curseur est celui par défaut
 end;
 

@@ -1,22 +1,21 @@
 { |========================================================================|
   |                                                                        |
-  |                  G V S O F T                                           |
-  |                  Projet : Paquet GVORPHEUS                             |
-  |                  Description : Fond de fiche en dégardé                |
-  |                  Unité : GVGradient.pas                                |
-  |                  Ecrit par  : VASSEUR Gilles                           |
-  |                  e-mail : g.vasseur58@laposte.net                      |
-  |                  Copyright : © G. VASSEUR 2015                         |
-  |                  Date:    27-04-2015 18:00:00                          |
+  |                  Projet : Aller plus loin avec Lazarus                 |
+  |                  Description : Components - Programme exemple 04       |
+  |                  Unité : gvgradient.pas                                |
+  |                  Site : www.developpez.net                             |
+  |                  Copyright : © Roland CHASTAIN & Gilles VASSEUR 2015   |
+  |                  Date:    05/11/2015 13:03:20                          |
   |                  Version : 1.0.0                                       |
   |                                                                        |
   |========================================================================| }
 
-// HISTORIQUE
-// 27/04/2015 - 1.0.0 - première version opérationnelle
 
-// GVGRADIENT - part of GVORPHEUS.LPK
-// Copyright © 2015 Gilles VASSEUR
+// HISTORIQUE
+// 05/11/2015 13:03:20 - 1.0.0 - première version opérationnelle
+
+// GVGRADIENT - part of "Aller plus loin avec Lazarus"
+// Copyright © Roland CHASTAIN & Gilles VASSEUR 2015
 //
 // This program is free software: you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the

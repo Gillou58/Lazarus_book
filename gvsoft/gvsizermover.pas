@@ -59,7 +59,6 @@ type
 
   TGVSizerMover = class(TComponent)
   strict private
-    { Private declarations }
     fEnabled: Boolean; // drapeau actif/inactif
     fHandlesColor: TColor;
     fHandlesOnMove: Boolean; // visibilité des poignées en mouvement
@@ -88,16 +87,14 @@ type
     procedure SetHandlesSize(AValue: Integer); // taille des poignées
     procedure SetHandlesVisible(AValue: Boolean); // visibilité des poignées
   protected
-    procedure Change; dynamic; // changement
+    procedure Change; // changement
   public
-    { Public declarations }
     constructor Create(AOwner: TComponent); override; // constructeur
     destructor Destroy; override; // destructeur
     procedure Add(AControl: TControl); // ajout d'un contrôle
     property Moving: Boolean read fMoving; // en mouvement ?
     property Enabled: Boolean read fEnabled write SetEnabled; // actif ?
   published
-    { Published declarations }
     property OnChange: TNotifyEvent read fOnChange write fOnChange;
     property HandlesOnMove: Boolean read fHandlesOnMove write SetHandlesOnMove;
     property HandlesSize: Integer read fHandlesSize write SetHandlesSize default CHSize;

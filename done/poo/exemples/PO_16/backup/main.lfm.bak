@@ -1,0 +1,8 @@
+object MainForm: TMainForm
+  Left = 254
+  Height = 240
+  Top = 150
+  Width = 320
+  Caption = 'Test des spécificateurs'
+  LCLVersion = '1.4.0.4'
+end
