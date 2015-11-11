@@ -46,7 +46,7 @@ type
   { TMainForm }
 
   TMainForm = class(TForm)
-    GVGradientPanel: TG;
+    GVGradientPanel: TGVGradient;
     GVGradientMain: TGVGradient;
     pnlMyPanel: TPanel;
   private

@@ -194,7 +194,7 @@ begin
   begin
     Screen.Cursor := crDefault; // curseur par défaut
     TMoveControl(Sender).MouseCapture := False; // capture libérée
-    TMoveControl(Sender).Repaint;
+    TMoveControl(Sender).Repaint; // contrôle redessiné
     fGettingHandle := False; // fin de l'activité des poignées
   end;
 end;
